@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Отправка письма",
+    "children" : [ {
+      "name" : "Тест",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "529e4954ecaabd90",
+        "parentUid" : "6ea63b0104c58235ae53d3c902f11162",
+        "status" : "passed",
+        "time" : {
+          "start" : 1546770983121,
+          "stop" : 1546771003451,
+          "duration" : 20330
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6ea63b0104c58235ae53d3c902f11162"
+    } ],
+    "uid" : "01eb012cf79106872d94fdaf78cbffa5"
+  } ]
+}

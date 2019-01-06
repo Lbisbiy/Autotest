@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Alex-ПК",
+    "children" : [ {
+      "name" : "5576-MainThread",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "529e4954ecaabd90",
+        "parentUid" : "0e953bdcdf448542ab4a81561b8fe4df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1546770983121,
+          "stop" : 1546771003451,
+          "duration" : 20330
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0e953bdcdf448542ab4a81561b8fe4df"
+    } ],
+    "uid" : "c34665eccca8e403697a6c35d1e65e47"
+  } ]
+}

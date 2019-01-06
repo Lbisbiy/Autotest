@@ -1,0 +1,189 @@
+{
+  "uid" : "9d02423550c85f38",
+  "name" : "test_login",
+  "fullName" : "test_main.TestMailSearch#test_login",
+  "historyId" : "023a5abfe9f18c04c12ca3a79de52af2",
+  "time" : {
+    "start" : 1546739231597,
+    "stop" : 1546739287646,
+    "duration" : 56049
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Заходим на почту",
+      "time" : {
+        "start" : 1546739231598,
+        "stop" : 1546739240597,
+        "duration" : 8999
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Вводим логин",
+        "time" : {
+          "start" : 1546739236220,
+          "stop" : 1546739237292,
+          "duration" : 1072
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Вводим пароль",
+        "time" : {
+          "start" : 1546739237934,
+          "stop" : 1546739240167,
+          "duration" : 2233
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Парсим",
+      "time" : {
+        "start" : 1546739240716,
+        "stop" : 1546739280408,
+        "duration" : 39692
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Фильтруем письма",
+        "time" : {
+          "start" : 1546739276473,
+          "stop" : 1546739280407,
+          "duration" : 3934
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "считаем количество писем",
+        "time" : {
+          "start" : 1546739280408,
+          "stop" : 1546739280408,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Отправка письма",
+      "time" : {
+        "start" : 1546739281386,
+        "stop" : 1546739284972,
+        "duration" : 3586
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "7c1384c0b8c6fd28",
+      "name" : "log",
+      "source" : "7c1384c0b8c6fd28.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "6cf4fc4e968ae609",
+      "name" : "stdout",
+      "source" : "6cf4fc4e968ae609.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "789d901ec428ae77",
+      "name" : "stderr",
+      "source" : "789d901ec428ae77.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Тест"
+  }, {
+    "name" : "feature",
+    "value" : "Отправка письма"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMailSearch"
+  }, {
+    "name" : "host",
+    "value" : "Alex-ПК"
+  }, {
+    "name" : "thread",
+    "value" : "6692-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9d02423550c85f38.json",
+  "parameterValues" : [ ]
+}

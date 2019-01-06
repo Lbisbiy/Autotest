@@ -1,0 +1,150 @@
+{
+  "uid" : "fd18b3b75fe06a9c",
+  "name" : "test_login",
+  "fullName" : "test_main.TestMailSearch#test_login",
+  "historyId" : "023a5abfe9f18c04c12ca3a79de52af2",
+  "time" : {
+    "start" : 1546769841284,
+    "stop" : 1546769956749,
+    "duration" : 115465
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'is_displayed'",
+  "statusTrace" : "self = <Ss.test_main.TestMailSearch object at 0x01D76A10>\n\n    @allure.feature('Отправка письма')\n    @allure.story('Тест')\n    def test_login(self):\n        data = Data()\n        with allure.step('Заходим на почту'):\n            driver = LoginPage().sig_in_page(self.driver, data)\n        assert driver.title == 'Gmail'\n        with allure.step('Парсим'):\n>           letter = ParserPage().parser_letters(driver, data.checkAddress).__str__()\n\ntest_main.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npageObject\\ParserPage.py:17: in parser_letters\n    wait.until(EC.visibility_of_element_located((By.CLASS_NAME, self._buttonAdvancedSearch)))\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:71: in until\n    value = method(self._driver)\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py:128: in __call__\n    return _element_if_visible(_find_element(driver, self.locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nelement = None, visibility = True\n\n    def _element_if_visible(element, visibility=True):\n>       return element if element.is_displayed() == visibility else False\nE       AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py:148: AttributeError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'is_displayed'",
+    "statusTrace" : "self = <Ss.test_main.TestMailSearch object at 0x01D76A10>\n\n    @allure.feature('Отправка письма')\n    @allure.story('Тест')\n    def test_login(self):\n        data = Data()\n        with allure.step('Заходим на почту'):\n            driver = LoginPage().sig_in_page(self.driver, data)\n        assert driver.title == 'Gmail'\n        with allure.step('Парсим'):\n>           letter = ParserPage().parser_letters(driver, data.checkAddress).__str__()\n\ntest_main.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npageObject\\ParserPage.py:17: in parser_letters\n    wait.until(EC.visibility_of_element_located((By.CLASS_NAME, self._buttonAdvancedSearch)))\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:71: in until\n    value = method(self._driver)\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py:128: in __call__\n    return _element_if_visible(_find_element(driver, self.locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nelement = None, visibility = True\n\n    def _element_if_visible(element, visibility=True):\n>       return element if element.is_displayed() == visibility else False\nE       AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py:148: AttributeError",
+    "steps" : [ {
+      "name" : "Заходим на почту",
+      "time" : {
+        "start" : 1546769841284,
+        "stop" : 1546769845574,
+        "duration" : 4290
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Вводим логин",
+        "time" : {
+          "start" : 1546769843350,
+          "stop" : 1546769843806,
+          "duration" : 456
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Вводим пароль",
+        "time" : {
+          "start" : 1546769844043,
+          "stop" : 1546769845387,
+          "duration" : 1344
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Парсим",
+      "time" : {
+        "start" : 1546769845582,
+        "stop" : 1546769956123,
+        "duration" : 110541
+      },
+      "status" : "broken",
+      "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'is_displayed'\n",
+      "statusTrace" : "  File \"D:\\python\\Ss\\test_main.py\", line 29, in test_login\n    letter = ParserPage().parser_letters(driver, data.checkAddress).__str__()\n  File \"D:\\python\\Ss\\pageObject\\ParserPage.py\", line 17, in parser_letters\n    wait.until(EC.visibility_of_element_located((By.CLASS_NAME, self._buttonAdvancedSearch)))\n  File \"D:\\python\\Ss\\venv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 71, in until\n    value = method(self._driver)\n  File \"D:\\python\\Ss\\venv\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 128, in __call__\n    return _element_if_visible(_find_element(driver, self.locator))\n  File \"D:\\python\\Ss\\venv\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 148, in _element_if_visible\n    return element if element.is_displayed() == visibility else False\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "7e62fef06600351",
+      "name" : "log",
+      "source" : "7e62fef06600351.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "709579b897f292f0",
+      "name" : "stdout",
+      "source" : "709579b897f292f0.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "6dfa44808442f9f2",
+      "name" : "stderr",
+      "source" : "6dfa44808442f9f2.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Отправка письма"
+  }, {
+    "name" : "story",
+    "value" : "Тест"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMailSearch"
+  }, {
+    "name" : "host",
+    "value" : "Alex-ПК"
+  }, {
+    "name" : "thread",
+    "value" : "3348-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fd18b3b75fe06a9c.json",
+  "parameterValues" : [ ]
+}
