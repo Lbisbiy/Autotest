@@ -1,23 +1,19 @@
 # Запуск проекта
 
-* Положить в папку проекта cromedriver
 
 * Открыть проект в PyCharm
 
 * Скачать и установить Allure
 
-* Меню Run -> Edit Configurations...
+* Меню Run -> Add Parameters...
 
-* **Name:** test
+* **Keywords:** test
 
-* **Parameters:** test_main.py
+* **Additional Arguments:** --alluredir reports
 
 * **Working directory:** <путь до папки с проектом>
 
-* Запуск теста:
-		pytest.test --alluredir reports
-
-	Генерация отчета:
+* Генерация отчета:
 			allure generate -o reports reports
 
 * Открыть index.html с помощью Mozilla Firefox
